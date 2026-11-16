@@ -1,0 +1,16 @@
+{
+  "name": "French Drain Gravel & Pipe Calculator",
+  "short_name": "DrainCalc",
+  "description": "Calculate tons of gravel, perforated pipe length, geotextile fabric square feet, and soil excavation volume for yard and foundation French drains.",
+  "start_url": "/french-drain-calculator/",
+  "display": "standalone",
+  "background_color": "#080e1a",
+  "theme_color": "#0284c7",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "64x64 128x128 256x256",
+      "type": "image/svg+xml"
+    }
+  ]
+}

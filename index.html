@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>French Drain Gravel & Pipe Calculator — Tons, Cubic Yards & Fabric Sizing</title>
+  <meta name="description" content="Calculate exact gravel tonnage, cubic yards, perforated pipe length, and geotextile fabric square footage for backyard and foundation French drains.">
+  <link rel="canonical" href="https://sebiglesias.com.ar/french-drain-calculator/">
+  <meta name="theme-color" content="#0284c7">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="French Drain Gravel & Pipe Calculator — Tons, Cubic Yards & Fabric Sizing">
+  <meta property="og:description" content="Calculate tons of #57 gravel, perforated pipe length, and geotextile filter fabric square footage for French drains.">
+  <meta property="og:url" content="https://sebiglesias.com.ar/french-drain-calculator/">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2BNDBQP0W7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2BNDBQP0W7');
+  </script>
+
+  <!-- Google AdSense -->
+  <meta name="google-adsense-account" content="ca-pub-3381238987477190">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3381238987477190" crossorigin="anonymous"></script>
+
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "French Drain Gravel & Pipe Calculator",
+      "url": "https://sebiglesias.com.ar/french-drain-calculator/",
+      "applicationCategory": "ConstructionApplication",
+      "operatingSystem": "Any",
+      "description": "Calculate gravel tons, cubic yards, perforated pipe length, and geotextile fabric for yard and foundation drainage systems.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How many tons of gravel do I need for a 50-foot French drain?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For a standard 50-foot trench that is 12 inches wide and 18 inches deep with a 4-inch pipe, you need approximately 1.5 to 1.8 tons of #57 washed crushed gravel (roughly 1.2 to 1.4 cubic yards), assuming a 4-inch topsoil cover layer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should the holes in French drain pipe point up or down?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Always point the holes DOWN (at the 4 o'clock and 8 o'clock positions). Water enters from the bottom as the water table rises up through the bedding gravel, enters the pipe perforations, and is rapidly evacuated by gravity before the water table can reach the lawn surface or foundation footing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What type of fabric should be used for a French drain?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You must use non-woven needle-punched geotextile filter fabric (typically 4 oz to 6 oz). Never use woven weed barrier landscape fabric, as woven fabrics quickly become clogged with silt and stop draining within 12 to 24 months."
+          }
+        }
+      ]
+    }
+  ]
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="badge">💧 Civil Drainage & Landscaping Science</div>
+      <h1>French Drain Gravel & Pipe Calculator</h1>
+      <p class="subtitle">Calculate required tons of washed gravel, perforated pipe footage, non-woven geotextile fabric, and excavation spoils for yard and footing drains.</p>
+
+      <div class="presets-bar">
+        <button class="preset-btn active" data-preset="yard">Soggy Backyard (50 ft)</button>
+        <button class="preset-btn" data-preset="foundation">Foundation Footing (100 ft)</button>
+        <button class="preset-btn" data-preset="driveway">Driveway Interceptor (30 ft)</button>
+        <button class="preset-btn" data-preset="deep_commercial">Deep Swale Run (120 ft)</button>
+      </div>
+    </header>
+
+    <!-- Top AdSense Banner -->
+    <div style="text-align:center; margin: 16px 0;">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-3381238987477190"
+           data-ad-slot="auto"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <!-- Main Grid -->
+    <div class="calc-grid">
+      <!-- Inputs Card -->
+      <div class="card">
+        <h2>📐 Trench Dimensions</h2>
+
+        <div class="form-group">
+          <label for="lengthFt">Total Trench Length</label>
+          <div class="input-wrap">
+            <input type="number" id="lengthFt" value="50" min="5" max="1000" step="5">
+            <span class="input-suffix">linear ft</span>
+          </div>
+        </div>
+
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+          <div class="form-group">
+            <label for="widthIn">Trench Width</label>
+            <div class="input-wrap">
+              <input type="number" id="widthIn" value="10" min="6" max="36" step="2">
+              <span class="input-suffix">inches</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="depthIn">Trench Depth</label>
+            <div class="input-wrap">
+              <input type="number" id="depthIn" value="14" min="8" max="48" step="2">
+              <span class="input-suffix">inches</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="pipeDiameter">Perforated Pipe Size</label>
+          <select id="pipeDiameter">
+            <option value="4" selected>4-Inch Perforated Pipe (Residential Standard)</option>
+            <option value="6">6-Inch Perforated Pipe (High-Flow & Commercial)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="soilCoverIn">
+            Topsoil / Sod Cover Depth
+            <span class="hint">Topsoil layer over the wrapped gravel</span>
+          </label>
+          <div class="input-wrap">
+            <input type="number" id="soilCoverIn" value="4" min="0" max="12" step="1">
+            <span class="input-suffix">inches</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Results Card -->
+      <div class="card">
+        <h2>📦 Materials & Gravel Order</h2>
+
+        <div class="result-hero">
+          <div class="result-label">Crushed #57 Gravel Required</div>
+          <div class="result-number" id="gravelTonsResult">1.2 Tons</div>
+          <div class="result-label" style="color:#bae6fd;" id="gravelYdsResult">0.9 cu yds (#57 Washed Stone)</div>
+        </div>
+
+        <div class="result-stat-grid">
+          <div class="stat-item">
+            <div class="stat-desc">Perforated Pipe Needed</div>
+            <div class="stat-val" id="pipeLengthResult">50 ft (4" Pipe)</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-desc">Non-Woven Geotextile</div>
+            <div class="stat-val" id="fabricResult">240 sq ft</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-desc">Excavated Dirt Spoils</div>
+            <div class="stat-val" id="spoilResult">1.9 cu yds</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-desc">Minimum Slope Needed</div>
+            <div class="stat-val" style="color:#38bdf8;">1% (1" drop per 8-10 ft)</div>
+          </div>
+        </div>
+
+        <div class="diagram-box">
+          <div style="font-size:0.8rem; color:var(--text-dim); margin-bottom:4px;">Engineered Cross-Section Layer Diagram</div>
+          <svg id="trenchSvg" viewBox="0 0 500 110"></svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- Amazon Supplies Box (Affiliate Tag sebiglesias-20) -->
+    <div class="supplies-card">
+      <h3>🛠️ Drainage Pipe, Filter Fabric & Earthmoving Tools</h3>
+      <div class="supplies-grid">
+        <div class="supply-item">
+          <div>
+            <div class="supply-title">Non-Woven 4oz Geotextile Fabric</div>
+            <div class="supply-desc">Continuous filament needle-punched polypropylene filter fabric with 100+ GPM flow rate.</div>
+          </div>
+          <a href="https://www.amazon.com/s?k=non+woven+geotextile+filter+fabric+drainage&tag=sebiglesias-20" target="_blank" rel="nofollow noopener" class="btn-amazon">Check on Amazon →</a>
+        </div>
+        <div class="supply-item">
+          <div>
+            <div class="supply-title">Pop-Up Drainage Emitter 4"</div>
+            <div class="supply-desc">Spring-loaded daylight discharge relief valve opens under hydrostatic pressure.</div>
+          </div>
+          <a href="https://www.amazon.com/s?k=pop+up+drainage+emitter+4+inch&tag=sebiglesias-20" target="_blank" rel="nofollow noopener" class="btn-amazon">View on Amazon →</a>
+        </div>
+        <div class="supply-item">
+          <div>
+            <div class="supply-title">Trenching Drain Shovel 4" / 5"</div>
+            <div class="supply-desc">Narrow trench cleanout shovel with forward step for clean vertical trench sidewalls.</div>
+          </div>
+          <a href="https://www.amazon.com/s?k=trenching+drain+cleanout+shovel&tag=sebiglesias-20" target="_blank" rel="nofollow noopener" class="btn-amazon">View on Amazon →</a>
+        </div>
+        <div class="supply-item">
+          <div>
+            <div class="supply-title">Green Laser Level for Slope</div>
+            <div class="supply-desc">Self-leveling line laser with grade detector to maintain true 1% fall across the trench.</div>
+          </div>
+          <a href="https://www.amazon.com/s?k=rotary+laser+level+grade+slope&tag=sebiglesias-20" target="_blank" rel="nofollow noopener" class="btn-amazon">View on Amazon →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Educational Guide Section -->
+    <section class="guide-section">
+      <h2>How French Drains Are Engineered for Decades of Flow</h2>
+      <p>A true French drain is a subsurface trench filled with washed aggregate surrounding a perforated pipe, completely wrapped in permeable filter fabric (a "burrito wrap"). It works on the principle that water follows the path of least resistance through gravel pores 1,000 times faster than through compacted clay soil.</p>
+      
+      <p><strong>1. Always Point Perforations DOWN:</strong> One of the most common DIY mistakes is installing the pipe with holes facing up. When holes point down at 4 o'clock and 8 o'clock, rising groundwater enters the bottom of the pipe and is carried away immediately before it can saturate your lawn. Holes facing up allow silt to settle into the pipe and require the entire trench to flood before drainage begins.</p>
+      
+      <p><strong>2. Use Washed #57 Stone (3/4" to 1"):</strong> Never use gravel with "fines" or crusher run. Fines (limestone dust or clay) pack tight, trap silt, and turn your gravel bed into concrete within two rain seasons. Always specify double-washed round river rock or #57 crushed granite.</p>
+
+      <p><strong>3. Never Use Woven Weed Barrier:</strong> Woven landscape weed barrier fabric has microscopic slit openings that quickly coat with clay particles, creating a waterproof barrier that blinds the drain. Always use <strong>4 oz or 6 oz needle-punched non-woven geotextile</strong>, which maintains water flow for 30+ years.</p>
+    </section>
+
+    <!-- FAQ Section for SEO -->
+    <section class="faq-section">
+      <h2 style="font-size:1.4rem; color:#ffffff; margin-bottom:16px;">Frequently Asked Questions (FAQ)</h2>
+      <div class="faq-item">
+        <div class="faq-q">What is the minimum slope required for a French drain?</div>
+        <div class="faq-a">The minimum slope is a 1% grade, which equals a 1-inch vertical drop for every 10 linear feet of trench (or 1/8 inch per foot). This ensures stormwater moves quickly enough to scour out any minor sediment without stagnation.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Where should a French drain discharge?</div>
+        <div class="faq-a">French drains should discharge to daylight in a lower portion of the property using a pop-up emitter valve, into a dry well, into a municipal storm sewer (where permitted by local code), or into a rain garden at least 10 to 15 feet away from any structure foundation.</div>
+      </div>
+    </section>
+
+    <!-- Bottom AdSense Banner -->
+    <div style="text-align:center; margin: 32px 0;">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-3381238987477190"
+           data-ad-slot="auto"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <footer>
+      <p>© 2026 <a href="https://sebiglesias.com.ar/">sebiglesias.com.ar</a> · French Drain Gravel & Pipe Calculator.</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
